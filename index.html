@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/querries.css">
+    <title>Payit</title>
+</head>
+<body>
+    <section>
+        <div id="form-section"> 
+            <div id="form-hero-box">
+                <div style="text-align: center; margin-top: 10px;">
+                    <img alt="payment" src="/images/skwyfdXrYn31PYv.png" style="width: 140px;" />
+                </div>
+                <p style="font-size: 16px; font-weight:400;">THE FRACTURE</p>
+                <span class="form-description-text" style="font-size: 14px; padding-left: 20%;">A short Films</span>
+            </div>
+            <form>
+                <div class="split-input-box">
+                    <input type="text" class="form-input name-input" placeholder="First Name" />
+                    <input type="text" class="form-input name-input" placeholder="Last Name" />
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="email" class="form-input" placeholder="Email" />
+                    <input type="text" class="form-input" placeholder="Phone Number" />
+                </div>
+                <h4>
+                    Tickets available
+                </h4>
+                <div class="ticket-price-box">
+                    <div class="ticket-category">  
+                        <label class="label">
+                            Regular
+                            <span class="label-price">
+                                NGN 1,000,000.00
+                            </span>
+                        </label>
+                        
+                        <div class="number-widget">
+                            <button class="ticket-btn" id="reg-btn" onclick="decrementValue('regular-ticket-input')">
+                                -
+                            </button>
+                            <div class="ticket-quantity">
+                                <input type="text" class="number-input" id="regular-ticket-input" value="0" />
+                            </div>
+                            <button class="ticket-btn" onclick="incrementValue('regular-ticket-input')">
+                                +
+                            </button>
+                        </div>
+                    </div> 
+                    
+                    <div class="ticket-category">
+                        <label class="label">
+                            VIP
+                            <span class="label-price">
+                                NGN 3,000,000.00
+                            </span>
+                        </label>
+                        <div class="number-widget">
+                            <button class="ticket-btn" onclick="decrementValue('vip-ticket-input')">
+                                -
+                            </button>
+                            <div class="ticket-quantity">
+                                <input type="number" class="number-input" id="vip-ticket-input" value="0" />
+                            </div>
+                            <button class="ticket-btn" onclick="incrementValue('vip-ticket-input')">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                        
+                    <div class="ticket-category">
+                        <label class="label">
+                            Table
+                            <span class="label-price">
+                                NGN 10,000,000.00
+                            </span>
+                        </label>
+                        <div class="number-widget">
+                            <button class="ticket-btn" onclick="decrementValue('table-ticket-input')">
+                                -
+                            </button>
+                            <div class="ticket-quantity">
+                                <input type="number" class="number-input" id="table-ticket-input" value="0" />
+                            </div>
+                            <button class="ticket-btn" onclick="incrementValue('table-ticket-input')">
+                                +
+                            </button>
+                        </div>
+                    </div>  
+
+                    <div class="ticket-category">
+                        <label class="label">
+                            Premium
+                            <span class="label-price">
+                                NGN 50,000,000.00
+                            </span>
+                        </label>
+                        <div class="number-widget">
+                            <button class="ticket-btn" onclick="decrementValue('premium-ticket-input')">
+                                -
+                            </button>
+                            <div class="ticket-quantity">
+                                <input type="number" class="number-input" id="premium-ticket-input" value="0" />
+                            </div>
+                            <button class="ticket-btn" onclick="incrementValue('premium-ticket-input')">
+                                +
+                            </button>
+                        </div>
+                    </div>  
+                    <div style="text-align: center;">
+                        <button class="btn-primary">
+                            Make payment
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <img alt="payment" src="/images/cards_badge.png" style="width: 140px;" />
+        </div>
+    </section>
+    
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
